@@ -15,14 +15,14 @@ local Tab = Window:MakeTab({
 --- meu Botao
 
 Tab:AddButton({
-	Name = "🎁 • Lucky Block, Don't Spam!",
+	Name = "🇺🇸 • English",
 	Callback = function()
       		OrionLib:Destroy() loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/LuckyBlockInglesUwhya6-twya6TJ76262727yY5/main/LuckyBlockInglesUwhya6-twya6TJ76262727yY5"))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "🎁 • Super Block, Don't Spam!",
+	Name = "🇧🇷 • Português",
 	Callback = function()
       		OrionLib:Destroy() loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/LuckyBlockPortuguesHejgF6RyIw65wG7-t74/main/LuckyBlockPortuguesHejgF6Rylw65wG7-74"))()
   	end    
