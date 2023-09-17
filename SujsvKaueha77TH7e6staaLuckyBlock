@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 --- Window
 
-local Window = OrionLib:MakeWindow({Name = "Harlen Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "yes", IntroText = "Harlen Hub", IntroIcon = "https://i.im.ge/2023/09/07/wkPJKM.CBCF4F42-18F9-4ED9-92F5-A0C22C892770.png"})
+local Window = OrionLib:MakeWindow({Name = "Harlen Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "yes", IntroText = "Harlen Hub", IntroIcon = "https://harlenuuu.weebly.com/uploads/1/4/7/0/147031498/picsart-23-09-17-19-15-44-691_orig.png", Icon = "https://harlenuuu.weebly.com/uploads/1/4/7/0/147031498/picsart-23-09-17-19-15-44-691_orig.png"})
 
 --- Tab
 
