@@ -14,7 +14,7 @@ local Tab = Window:MakeTab({
 
 --- meu Botao
 
-Tab:AddParagraph("Paragraph","Paragraph Content")
+Tab:AddParagraph("🌐 • Language","Select Your Language!!")
 
 Tab:AddButton({
 	Name = "🇺🇸 • English",
