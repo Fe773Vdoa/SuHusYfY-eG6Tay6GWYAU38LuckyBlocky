@@ -68,6 +68,17 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "🎁 • Void Block, Don't Spam!",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
+game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer() 
+game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
+game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
+
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "📍┃Teleport",
 	Icon = "rbxassetid://4483345998",
