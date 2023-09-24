@@ -69,6 +69,175 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "📍┃Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "🔴 • Red Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-1154.28857421875, 193.5998077392578, 260.6675109863281)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🍊 • Orange Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-870.7681884765625, 193.59991455078125, -23.780122756958008)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🟡 • Yellom Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-927.0543212890625, 193.59991455078125, -80.79584503173828)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🟢 • Green Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-1154.63671875, 193.599853515625, -80.92108917236328)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🔵 • Light Blue Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-1213.513427734375, 193.5999298095703, -23.409862518310547)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🔵 • Dark Blue Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-1213.90576171875, 193.599853515625, 205.50064086914062)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🟣 • Purple Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-926.9490356445312, 193.59991455078125, 260.6566162109375)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🌸 • Pink Team",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-871.201416015625, 193.599853515625, 204.7313995361328)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+Tab:AddButton({
+	Name = "🎁 • Lucky Blocks Center",
+	Callback = function()
+      		local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 100
+  TweenPos = CFrame.new(-1037.23046875, 197.3822021484375, 106.42655181884766)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+         end    
+})
+
+
+local Tab = Window:MakeTab({
 	Name = "↩️┃Others",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
