@@ -1,77 +1,43 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
 
 --- Window
 
-local Window = OrionLib:MakeWindow({Name = "Harlen Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "yes", IntroText = "Harlen Hub", IntroIcon = "https://harlenuuu.weebly.com/uploads/1/4/7/0/147031498/picsart-23-09-17-19-15-44-691_orig.png", Icon = "https://harlenuuu.weebly.com/uploads/1/4/7/0/147031498/picsart-23-09-17-19-15-44-691_orig.png"})
+local Library = DarkraiX:Window("Harlen Hub","","",Enum.KeyCode.RightControl);
 
---- Tab
+--- Tabs
 
-local Tab = Window:MakeTab({
-	Name = "🎁┃Lucky Block",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+Tab1 = Library:Tab("🎁┃Lucky Block")
+Tab2 = Library:Tab("📍┃Teleport")
+Tab3 = Library:Tab("↩️┃Others")
 
 --- Section
 
-local Section = Tab:AddSection({
-	Name = "Brazilian Script By Harlen_Br0"
-})
+Tab1:Label("Brazilian Script By Harlen_Br0")
 
---- Notifier
+--- Botões
 
-OrionLib:MakeNotification({
-	Name = "Discord: harlen___",
-	Content = "Executed, Harlen Hub",
-	Image = "rbxassetid://4483345998",
-	Time = 20
-})
+Tab1:Button("🎁 • Lucky Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnLuckyBlock"):FireServer()
+end)
 
---- meu Botao
+Tab1:Button("🎁 • Super Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnSuperBlock"):FireServer()
+end)
 
-Tab:AddButton({
-	Name = "🎁 • Lucky Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnLuckyBlock"):FireServer()
+Tab1:Button("🎁 • Diamond Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnDiamondBlock"):FireServer()
+end)
 
-  	end    
-})
+Tab1:Button("🎁 • Rainbow Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
+end)
 
-Tab:AddButton({
-	Name = "🎁 • Super Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnSuperBlock"):FireServer()
+Tab1:Button("🎁 • Galaxy Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
+end)
 
-  	end    
-})
-
-Tab:AddButton({
-	Name = "🎁 • Diamond Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnDiamondBlock"):FireServer() 
-  	end    
-})
-
-Tab:AddButton({
-	Name = "🎁 • Rainbow Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
-
-  	end    
-})
-
-Tab:AddButton({
-	Name = "🎁 • Galaxy Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
-
-  	end    
-})
-
-Tab:AddButton({
-	Name = "🎁 • Void Block, Don't Spam!",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
+Tab1:Button("🎁 • Void Block, Don't Spam!",function()
+    game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
@@ -81,20 +47,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServe
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
+end)
 
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "📍┃Teleport",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "🔴 • Red Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🔴 • Red Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -106,13 +62,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🍊 • Orange Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🍊 • Orange Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -124,13 +77,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🟡 • Yellom Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("⭐ • Yellom Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -142,13 +92,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🟢 • Green Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🍏 • Green Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -160,13 +107,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🔵 • Light Blue Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🔵 • Light Blue Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -178,13 +122,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🔵 • Dark Blue Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🔵 • Dark Blue Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -196,13 +137,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🟣 • Purple Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("💜 • Purple Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -214,13 +152,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🌸 • Pink Team",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🌸 • Pink Team",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -232,13 +167,10 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
-Tab:AddButton({
-	Name = "🎁 • Lucky Blocks Center",
-	Callback = function()
-      		local plr = game.Players.LocalPlayer
+Tab2:Button("🎁 • Lucky Blocks Center",function()
+    local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
   TweenSpeed = 200
@@ -250,28 +182,15 @@ if plrRP then
   tween:Play()
   tween.Completed:Wait()
 end
-         end    
-})
+end)
 
+Tab3:Button("✈️ • Fly",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
 
-local Tab = Window:MakeTab({
-	Name = "↩️┃Others",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+Tab3:Button("🗡️ • Hit Box",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HitBox/main/hitbox0"))()
+end)
 
-Tab:AddButton({
-	Name = "✈️ • Fly",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "🗡️ • Hit Box",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HitBox/main/hitbox0"))()
-  	end    
-})
-
-OrionLib:Init()
+--[[
+]]
