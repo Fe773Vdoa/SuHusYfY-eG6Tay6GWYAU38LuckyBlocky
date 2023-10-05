@@ -15,8 +15,11 @@ Tab3 = Library:Tab("↩️┃Others")
 Tab1:Label("Brazilian Script By Harlen_Br0")
 
 --- Botões
+
 Tab1:Line()
+
 Tab1:Seperator("🎁 = Lucky Blocks = 🎁")
+
 Tab1:Button("🎁 • Lucky Block, Don't Spam!",function()
     game:GetService("ReplicatedStorage"):WaitForChild("SpawnLuckyBlock"):FireServer()
 end)
@@ -198,6 +201,7 @@ Tab2:Line()
 Tab3:Line()
 
 Tab3:Seperator("📂 = Scripts = 📂")
+
 Tab3:Button("✈️ • Fly",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
