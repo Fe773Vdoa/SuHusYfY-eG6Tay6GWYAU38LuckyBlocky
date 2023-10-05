@@ -15,7 +15,8 @@ Tab3 = Library:Tab("↩️┃Others")
 Tab1:Label("Brazilian Script By Harlen_Br0")
 
 --- Botões
-
+Tab1:Line()
+Tab1:Seperator("🎁 = Lucky Blocks = 🎁")
 Tab1:Button("🎁 • Lucky Block, Don't Spam!",function()
     game:GetService("ReplicatedStorage"):WaitForChild("SpawnLuckyBlock"):FireServer()
 end)
@@ -48,6 +49,12 @@ game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServe
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer() 
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnRainbowBlock"):FireServer()
 end)
+
+Tab1:Line()
+
+Tab2:Line()
+
+Tab2:Seperator("🏳️ = Teams = 🏳️")
 
 Tab2:Button("🔴 • Red Team",function()
     local plr = game.Players.LocalPlayer
@@ -169,6 +176,8 @@ if plrRP then
 end
 end)
 
+Tab2:Seperator("↩️ = Others = ↩️")
+
 Tab2:Button("🎁 • Lucky Blocks Center",function()
     local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
@@ -184,6 +193,11 @@ if plrRP then
 end
 end)
 
+Tab2:Line()
+
+Tab3:Line()
+
+Tab3:Seperator("📂 = Scripts = 📂")
 Tab3:Button("✈️ • Fly",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
@@ -191,6 +205,8 @@ end)
 Tab3:Button("🗡️ • Hit Box",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HitBox/main/hitbox0"))()
 end)
+
+Tab3:Line()
 
 --[[
 ]]
