@@ -13,6 +13,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/ButtonIJheu
 Tab1 = Library:Tab("🎁┃Lucky Block")
 Tab2 = Library:Tab("📍┃Teleport")
 Tab3 = Library:Tab("↩️┃Others")
+Tab4 = Library:Tab("💳┃Credits")
 
 --- Section
 
@@ -214,7 +215,19 @@ Tab3:Button("🗡️ • Hit Box",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HitBox/main/hitbox0"))()
 end)
 
+Tab3:Button("♾️ • Infinite Yield",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
 Tab3:Line()
+
+Tab4:Line()
+
+Tab4:Seperator("💳 = Credits = 💳")
+
+Tab4:Label("Credits To REDz")
+
+Tab4:Line()
 
 --[[
 ]]
