@@ -225,7 +225,11 @@ Tab4:Line()
 
 Tab4:Seperator("💳 = Credits = 💳")
 
+Tab4:Label("Credits To Harlen")
+
 Tab4:Label("Credits To REDz")
+
+Tab4:Label("Credits To Gb")
 
 Tab4:Line()
 
