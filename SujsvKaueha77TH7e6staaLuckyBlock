@@ -213,7 +213,7 @@ Tab3:Button("✈️ • Fly",function()
 end)
 
 Tab3:Button("🗡️ • Hit Box",function()
-    _G.HeadSize = 50
+    _G.HeadSize = 30
 _G.Disabled = true
 
 game:GetService('RunService').RenderStepped:connect(function()
