@@ -14,7 +14,7 @@ Tab1 = Library:Tab("🎁┃Lucky Block")
 Tab2 = Library:Tab("📍┃Teleport")
 Tab3 = Library:Tab("📂┃Scripts")
 Tab4 = Library:Tab("🎯┃Misc")
-Credits = Library:Tab("💳┃Credits")
+Tab5 = Library:Tab("💳┃Credits")
 
 --- Section
 
@@ -226,7 +226,7 @@ Tab4:Line()
 
 Tab4:Seperator("🎯 = Misc = 🎯")
 
-Tab4:Label("The Normal Speed This "16".")
+Tab4:Label("The Normal Speed This 16")
 
 Tab4:Slider("🏃 • Speed",1,150,16,function(value)
         local player = game.Players.LocalPlayer
@@ -258,17 +258,17 @@ end)
 
 Tab4:Line()
 
-Credits:Line()
+Tab5:Line()
 
-Credits:Seperator("💳 = Credits = 💳")
+Tab5:Seperator("💳 = Credits = 💳")
 
-Credits:Label("Credits To Harlen")
+Tab5:Label("Credits To Harlen")
 
-Credits:Label("Credits To REDz")
+Tab5:Label("Credits To REDz")
 
-Credits:Label("Credits To Gb")
+Tab5:Label("Credits To Gb")
 
-Credits:Line()
+Tab5:Line()
 
 --[[
 ]]
