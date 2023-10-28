@@ -240,7 +240,7 @@ Tab4:Button("👻 • Noclip",function()
   
   local humanoid = part.Parent:FindFirstChild("Humanoid")
   if humanoid ~= nil then
-    -- Define a propriedade "CanCollide" do objeto como falso para desativar a colisão
+    
     part.CanCollide = false
   end
 end
@@ -252,8 +252,8 @@ for _, part in ipairs(workspace:GetDescendants()) do
 end
 end)
 
-Tab4:Button(" • ",function()
-    
+Tab4:Button("🦘 • Infinite Jumps",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/SuHusYfY-eG6Tay6GWYAU38LuckyBlocky/main/InfiniteJump"))()
 end)
 
 Tab4:Line()
