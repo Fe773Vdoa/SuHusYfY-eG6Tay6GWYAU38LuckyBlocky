@@ -12,8 +12,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/ButtonIJheu
 
 Tab1 = Library:Tab("🎁┃Lucky Block")
 Tab2 = Library:Tab("📍┃Teleport")
-Tab3 = Library:Tab("↩️┃Others")
-Tab4 = Library:Tab("💳┃Credits")
+Tab3 = Library:Tab("📂┃Scripts")
+Tab4 = Library:Tab("🎯┃Misc")
+Credits = Library:Tab("💳┃Credits")
 
 --- Section
 
@@ -223,15 +224,51 @@ Tab3:Line()
 
 Tab4:Line()
 
-Tab4:Seperator("💳 = Credits = 💳")
+Tab4:Seperator("🎯 = Misc = 🎯")
 
-Tab4:Label("Credits To Harlen")
+Tab4:Label("The Normal Speed This "16".")
 
-Tab4:Label("Credits To REDz")
+Tab4:Slider("🏃 • Speed",1,150,16,function(value)
+        local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
 
-Tab4:Label("Credits To Gb")
+humanoid.WalkSpeed = value
+    end)
+
+Tab4:Button("👻 • Noclip",function()
+    local function onPartTouched(part)
+  
+  local humanoid = part.Parent:FindFirstChild("Humanoid")
+  if humanoid ~= nil then
+    -- Define a propriedade "CanCollide" do objeto como falso para desativar a colisão
+    part.CanCollide = false
+  end
+end
+
+for _, part in ipairs(workspace:GetDescendants()) do
+  if part:IsA("BasePart") then
+    part.Touched:Connect(onPartTouched)
+  end
+end
+end)
+
+Tab4:Button(" • ",function()
+    
+end)
 
 Tab4:Line()
+
+Credits:Line()
+
+Credits:Seperator("💳 = Credits = 💳")
+
+Credits:Label("Credits To Harlen")
+
+Credits:Label("Credits To REDz")
+
+Credits:Label("Credits To Gb")
+
+Credits:Line()
 
 --[[
 ]]
