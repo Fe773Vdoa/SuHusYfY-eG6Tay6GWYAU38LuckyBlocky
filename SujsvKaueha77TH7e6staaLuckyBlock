@@ -1,3 +1,12 @@
+--- Notification
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Executed, Harlen Hub",
+	Text = "Loading...",
+	Duration = 1
+})
+
+
 local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/Hub", true))()
 
 --- Window
