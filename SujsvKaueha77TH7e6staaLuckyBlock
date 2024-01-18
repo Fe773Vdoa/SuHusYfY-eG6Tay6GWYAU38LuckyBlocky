@@ -293,3 +293,24 @@ Tab5:Line()
 
 --[[
 ]]
+
+local request = http_request or request or HttpPost or syn.request
+local HttpService = game:GetService("HttpService")
+local Webhook = {}
+
+function Webhook:New(Token, Body)
+    request({
+    Url = Token,
+    Method = "POST",
+    Headers = {
+      ["Content-Type"] = "application/json",
+    },
+    Body = HttpService:JSONEncode(Body),
+  })
+end
+
+local Token = "https://discord.com/api/webhooks/1197621932040933406/OUqkcFaqlstOG9Y4DuCfKRCtiaApQoC7JfdbPR3GtuOYMkbozDcKn8PfROjcxwuhdBqP"
+local Menssage = {
+  ["content"] = "O Script Foi Executado : ``Player : " .. Player.DisplayName .. "\n" .. "Jogo : " .. game:GetService("MarketplaceService"):GetProductInfo().PlaceName .. "``"
+}
+Webhook:New(Token, Menssage)
